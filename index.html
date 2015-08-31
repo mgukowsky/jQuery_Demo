@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery Demo</title>
+	<meta charset="utf-8">
+	<meta name="author" content="Matt Gukowsky">
+	<meta name="purpose" content="To demonstrate the fundamental uses of jQuery">
+	<link rel="stylesheet" href="index.css">
+</head>
+<body>
+	<area id="bg-tint"></area>
+	<object id="tint-change-container">
+		<form id="form-change-tint" class="jq-form" action="#">
+			<input type="text" id="user-tint-val">
+			<button type="submit" id="button-change-tint">Change Background to this Color!</button>
+			<p>HINT: try a name like "red", or a value like "900"...</p>
+		</form>
+	</object>
+	<object id="weather-container">
+		<a href="http://www.google.com" id="ajax-link">Update weather info!</a>
+		<p id="weather-box">Loading...</p>
+	</object>
+	<section id="posts">
+		<h1>jQuery Demo :D</h1>
+		<form id="form-new-li" class="jq-form" action="#">
+			<input type="text" id="user-text">
+			<button type="submit" id="button-new-li">Add new post!</button>
+		</form>
+		<ul id="main-list">
+			<li>Cool post, dude!</li>
+		</ul>
+	</section>
+	<!--Include jQuery first so we can use it in subsequent scripts -->
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="jQueryPractice.js"></script>
+	<!--Manually trigger the initial AJAX call -->
+	<script type="text/javascript">
+		$("#ajax-link").trigger("click");
+	</script>
+</body>
+</html>

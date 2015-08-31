@@ -1,0 +1,101 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed);
+
+html, body {
+	height: 100%;
+}
+
+* {
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+body, form{
+	padding: 0;
+	border: 0;
+	margin: 0;
+}
+
+body {
+	background-image: url("background.jpg");
+}
+
+#bg-tint {
+	width: 100%;
+	height: 100%;
+	opacity: 0.4;
+	background-color: red;
+	position: absolute;
+	z-index: -1;
+}
+
+#posts {
+	display: block;
+	width: 50%;
+	margin: auto;
+	height: 100%;
+  background-color: #FF0000;
+  background-image: -webkit-gradient(linear, left top, right top, from(#F7CC20), to(#79F2BC));
+  background-image: -webkit-linear-gradient(bottom, #F7CC20, #79F2BC);
+  background-image: -moz-linear-gradient(bottom, #F7CC20, #79F2BC);
+  background-image: -o-linear-gradient(bottom, #F7CC20, #79F2BC);
+  background-image: linear-gradient(to bottom, #F7CC20, #79F2BC);
+  opacity: 0.8;
+  text-align: center;
+}
+
+#posts * {
+	display: block;
+	width: 75% ;
+	margin: auto;
+}
+
+#posts ul {
+	list-style: circle;
+	text-align: center;
+}
+
+#posts > h1 {
+	font-size: 50px;
+	margin-bottom: 15px;
+}
+
+#tint-change-container {
+	float: left;
+}
+
+#tint-change-container > form, #weather-container {
+	padding: 10px;
+	margin: 10px;
+	border-radius: 15px;
+	background-color: #FF0000;
+  background-image: -webkit-gradient(linear, left top, right top, from(#F7CC20), to(#79F2BC));
+  background-image: -webkit-linear-gradient(bottom, #F7CC20, #79F2BC);
+  background-image: -moz-linear-gradient(bottom, #F7CC20, #79F2BC);
+  background-image: -o-linear-gradient(bottom, #F7CC20, #79F2BC);
+  background-image: linear-gradient(to bottom, #F7CC20, #79F2BC);
+}
+
+#weather-container {
+	float: right;
+}
+
+#weather-container > a {
+	display: block;
+	padding: 10px;
+	margin: 10px auto;
+	border-radius: 15px;
+	text-decoration: none;
+	color: #FFFFFF;
+	font-size: 20px;
+	background-color: #00FF00;
+  background-image: -webkit-gradient(linear, left top, right top, from(#4A021A), to(#E80000));
+  background-image: -webkit-linear-gradient(bottom, #4A021A, #E80000);
+  background-image: -moz-linear-gradient(bottom, #4A021A, #E80000);
+  background-image: -o-linear-gradient(bottom, #4A021A, #E80000);
+  background-image: linear-gradient(to bottom, #4A021A, #E80000);
+}
+
+#weather-container > a:hover {
+	color: #45F59D;
+}
+
+
